@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:background="?attr/backgroundcolor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="?attr/textcolor"
+                android:text="Settings"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textcolor"
+                android:text="Welcome to the Settings page."
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/buttoncolor"
+                android:onClick="process9"
+                android:text="Version Number" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:background="?attr/buttoncolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="process10"
+                android:text="Check For Updates" />
+
+            <Button
+                android:id="@+id/btn_nt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/buttoncolor"
+                android:onClick="process11"
+                android:text="Toggle Night Mode" />
+
+            <Button
+                android:id="@+id/btn_homee"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="?attr/buttoncolor"
+                android:onClick="process3"
+                android:text="Back" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
